@@ -20,7 +20,7 @@
 
             <h1>calcola il prezzo del tuo biglietto</h1>
 
-            <section id="form-box">
+            <section id="form-box" class="white-box">
                 <form>
                     <div class="input-box">
                         <div class="col">
@@ -34,7 +34,7 @@
                         <div class="col">
                             <label for="age-input">Fascia d'età</label>
                             <select id="age-input">
-                                <option selected disabled>Scegli...</option>
+                                <option selected disabled value="null">Scegli...</option>
                                 <option value="minorenne">Minorenne</option>
                                 <option value="standard">Maggiorenne</option>
                                 <option value="silver">Ultra sessantacinquenne</option>
@@ -42,7 +42,7 @@
                         </div>
                     </div><!-- CHIUSURA INPUT-BOX -->
                     <div class="button-box">
-                        <button> Genera</button>
+                        <button type="button"> Genera</button>
                         <button type="reset" value="Reset">Annulla</button>
                     </div><!-- CHIUSURA BUTTON-BOX -->
                 </form>
@@ -92,6 +92,15 @@
                     </div>
                 </div>
             </section><!-- CHIUSURA RESULT-BOX -->
+
+            <section id="error-box">
+                <h2>oh no!</h2>
+                <div class="white-box">
+                    <p id="error-message">
+                        error message placeholder
+                    </p>
+                </div>
+            </section>
         </div><!-- CHIUSURA CONTAINER -->
 
         <!-- JS -->

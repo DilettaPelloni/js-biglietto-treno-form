@@ -22,6 +22,7 @@ body {
 .white-box {
     background-color: white;
     padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 /* TESTO */
@@ -59,12 +60,15 @@ td {
     text-transform: capitalize;
 }
 
+#error-message {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 /* FORM BOX */
 #form-box {
     margin-bottom: 2rem;
-    padding: 2rem;
     border-radius: 20px;
-    background-color: white;
 }
 
 #form-box .input-box {
@@ -121,6 +125,10 @@ td {
 }
 
 /* RESULT BOX */
+#result-box {
+    display: none;
+}
+
 #result-box .white-box .ticket {
     display: flex;
     border: 1px solid gray;
@@ -138,4 +146,9 @@ td {
 
 #result-box .white-box .ticket .col-large table {
     width: 100%;
+}
+
+/* ERROR BOX */
+#error-box {
+    display: none;
 }
