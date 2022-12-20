@@ -3,3 +3,139 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* REGOLE GENERALI */
+:root {
+    --main-color: #B91450;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.white-box {
+    background-color: white;
+    padding: 2rem;
+}
+
+/* TESTO */
+h1 {
+    margin: 2rem 0;
+}
+
+h1,
+h2 {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+th {
+    padding-bottom: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+/* FORM BOX */
+#form-box {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#form-box .input-box {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#form-box .input-box .col {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+#form-box .input-box .col label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+#form-box .input-box .col input,
+#form-box .input-box .col select {
+    display: block;
+    width: 200px;
+    padding: 0.5rem;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#form-box .input-box .col input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+
+#form-box .input-box .col input:focus-visible,
+#form-box .input-box .col select:focus-visible {
+    background-color: var(--main-color);
+} 
+
+#form-box .input-box .col select:focus-visible option {
+    background-color: white;
+}
+
+#form-box .button-box {
+    text-align: center;
+}
+
+#form-box .button-box button {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* RESULT BOX */
+#result-box .white-box .ticket {
+    display: flex;
+    border: 1px solid gray;
+}
+
+#result-box .white-box .ticket .col-small {
+    padding: 2rem;
+    background-color: gray;
+}
+
+#result-box .white-box .ticket .col-large {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+#result-box .white-box .ticket .col-large table {
+    width: 100%;
+}

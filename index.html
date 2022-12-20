@@ -8,11 +8,91 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
 
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
         <title>Calcola il prezzo del tuo biglietto</title>
     </head>
 
     <body>
-        
+
+        <div class="container">
+
+            <h1>calcola il prezzo del tuo biglietto</h1>
+
+            <section id="form-box">
+                <form>
+                    <div class="input-box">
+                        <div class="col">
+                            <label for="fullname-input"> Nome Cognome</label>
+                            <input id="fullname-input" type="text" placeholder="Nome e cognome">
+                        </div>
+                        <div class="col">
+                            <label for="km-input"> Km da percorrere</label>
+                            <input id="km-input" type="number" placeholder="Km da percorrere">
+                        </div>
+                        <div class="col">
+                            <label for="age-input">Fascia d'età</label>
+                            <select id="age-input">
+                                <option selected disabled>Scegli...</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="standard">Maggiorenne</option>
+                                <option value="silver">Ultra sessantacinquenne</option>
+                            </select>
+                        </div>
+                    </div><!-- CHIUSURA INPUT-BOX -->
+                    <div class="button-box">
+                        <button> Genera</button>
+                        <button type="reset" value="Reset">Annulla</button>
+                    </div><!-- CHIUSURA BUTTON-BOX -->
+                </form>
+            </section><!-- CHIUSURA FORM-BOX -->
+
+            <section id="result-box">
+                <h2>il tuo biglietto</h2>
+                <div class="white-box">
+                    <h3>dettaglio passeggeri</h3>
+                    <div class="ticket">
+                        <div class="col-small">
+                            <h3>nome passeggero</h3>
+                            <h4 id="fullname-display">full-name placeholder</h4>
+                        </div>
+                        <div class="col-large">
+                            <table>
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo Biglietto</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="offer">
+                                            offer placeholder
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span id="carriage">
+                                            carriage placeholder
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span id="cp-code">
+                                            cp-code placeholder
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span id="final-price">
+                                            final-price placeholder
+                                        </span>
+                                    </td>
+                                  </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- CHIUSURA RESULT-BOX -->
+        </div><!-- CHIUSURA CONTAINER -->
 
         <!-- JS -->
         <script type="text/javascript" src="js/scripts.js"></script>
